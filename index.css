@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    padding: 1.5rem 0;
+    background-image: linear-gradient(
+        to right,
+        rgb(18, 172, 142, 0.9),
+        rgb(18, 172, 142, 0.7)
+        ),
+        url("Images/Salud\ Extra.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
