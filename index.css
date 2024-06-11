@@ -9,9 +9,11 @@ header {
     color: #ffffff;
     padding: 1rem 0;
     background-image: linear-gradient(to right,
-            rgb(43, 2, 2),
+            rgb(0, 0, 0),
             rgb(15, 8, 80));
 }
+
+
 
 .lead {
     font-size: 30px;
@@ -88,4 +90,20 @@ nav ul li a:hover::after {
     .nav-list {
         display: none;
     }
+}
+
+
+.marquee-container {
+    color: #333;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.marquee {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
 }
