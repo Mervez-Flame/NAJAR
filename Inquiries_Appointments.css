@@ -4,16 +4,15 @@
     box-sizing: border-box;
 }
 
-header{
+header {
     text-align: center;
     color: #ffffff;
     padding: 1rem 0;
-    background-image: linear-gradient(
-        to right,
-        rgb(43, 2, 2),
-        rgb(15, 8, 80)
-        );
+    background-image: linear-gradient(to right,
+            rgb(0, 0, 0),
+            rgb(15, 8, 80));
 }
+
 
 .lead{
     font-size: 30px;
