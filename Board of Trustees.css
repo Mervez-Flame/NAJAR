@@ -1,7 +1,18 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a::after {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 header {
@@ -14,17 +25,17 @@ header {
 }
 
 
-.lead{
+.lead {
     font-size: 30px;
     font-weight: 600;
-    padding-bottom: 1rem ;
+    padding-bottom: 1rem;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: row;
-    list-style: none; 
-justify-content: space-around;
+    list-style: none;
+    justify-content: space-around;
 }
 
 nav ul li {
@@ -32,14 +43,14 @@ nav ul li {
     padding: .25rem .5rem;
 }
 
-nav ul li a{
+nav ul li a {
     display: inline;
     color: #ffffff;
     text-decoration: none;
 }
 
 .bot {
-background-color: #878585;
+    background-color: #878585;
 }
 
 nav ul li a::after {
@@ -57,50 +68,187 @@ nav ul li a:hover::after {
 }
 
 @media (max-width: 800px) {
-    
-    header{
+
+    header {
         text-align: left;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
 
-    .lead{
+    .lead {
         font-size: 30px;
     }
 
-    .nav-list{
+    .nav-list {
         display: none;
     }
 }
 
 @media (max-width: 1200px) {
-    
-    header{
+
+    header {
         text-align: left;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
 
-    .lead{
+    .lead {
         font-size: 30px;
     }
 
-    .nav-list{
+    .nav-list {
         display: none;
     }
 }
 
-.marquee-container {
-    color: #333;
-    background-color: #fff;
-    border: 2px solid #ddd;
+.scrolling-texts-container {
+    position: absolute;
+    height: max-content;
+    width: max-content;
+    z-index: 99;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.marquee {
-    color: #333;
+
+.scrolling-texts {
+    animation: marque 12s linear infinite, changeColor 5s infinite;
     font-size: 20px;
     font-weight: bold;
-    overflow: hidden;
+    color: #ffffff;
     white-space: nowrap;
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes marque {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes changeColor {
+
+    0%,
+    100% {
+        color: red;
+    }
+
+    25% {
+        color: blue;
+    }
+
+    50% {
+        color: rgb(3, 99, 1);
+    }
+
+    75% {
+        color: rgb(255, 94, 0);
+    }
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    /* margin-top: 60px; */
+    /* Add margin to account for fixed header */
+    background-image: url(./Images/BOT\ BG.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.post-main{
+    background: rgba(255, 255, 255, 0.1 ) ;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.trustees {
+    background-color: #f7f7f7;
+    padding: 2em;
+    border: 1px solid #6c0303;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: fit-content;
+}
+
+.trustees ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.trustees li {
+    margin: 20px;
+    width: calc(25% - 40px);
+    text-align: center;
+}
+
+.trustees img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.trustees h3 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.trustees p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .trustees li {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .trustees li {
+        width: 100%;
+    }
+
+    .trustees ul {
+        flex-direction: column;
+    }
+}
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5%;
+    margin: auto;
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer div p {
+    text-decoration: underline;
+}
+
+.Company h3 {
+    text-decoration: none;
 }
