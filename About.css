@@ -94,7 +94,18 @@ nav ul li a:hover::after {
 /* Media Query */
 
 @media (max-width: 600px) {
-
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        text-align: center;
+    }
     /* Adjusted max-width for mobile view */
     .nav-list {
         display: none;
@@ -138,19 +149,17 @@ nav ul li a:hover::after {
 
 
 .scrolling-texts-container {
-    position: absolute;
-    height: max-content;
-    width: max-content;
-    z-index: 99;
     padding: 10px;
+    background: transparent;
 }
 
 .scrolling-texts {
     animation: marque 12s linear infinite, changeColor 5s infinite;
     font-size: 20px;
+    width: min-content;
+    height: min-content;
     font-weight: bold;
     overflow: hidden;
-    color: #ffffff;
     white-space: nowrap;
 }
 
@@ -165,7 +174,7 @@ nav ul li a:hover::after {
     }
 }
 
-/* @keyframes changeColor {
+@keyframes changeColor {
 
     0%,
     100% {
@@ -183,16 +192,17 @@ nav ul li a:hover::after {
     75% {
         color: rgb(255, 94, 0);
     }
-} */
+}
 
 
 @media (max-width: 800px) {
 
     header {
-        text-align: left;
+
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
+
 
     .lead {
         font-size: 30px;
@@ -211,13 +221,10 @@ nav ul li a:hover::after {
     .lead {
         font-size: 30px;
     }
-
-    .nav-list {
-        display: none;
-    }
 }
 
 .main {
+    
     background-image: url(./Images/BG.\ Isolated\ black\ background\ for\ t-shirt\,\ poster\,\ clothing_);
     min-height: 100vh;
     background-size: cover;
@@ -306,5 +313,3 @@ nav ul li a:hover::after {
 .Company h3 {
     text-decoration: none;
 }
-
-.footer div h3 {}

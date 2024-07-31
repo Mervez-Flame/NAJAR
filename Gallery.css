@@ -224,18 +224,19 @@ nav ul li a:hover::after {
   /* Marquee Beginning */
 
   .scrolling-texts-container {
-    height: max-content;
-    width: fit-content;
     padding: 10px;
-    backdrop-filter: blur(3px);
-  }
+    background: transparent;
+}
 
-  .scrolling-texts {
+.scrolling-texts {
     animation: marque 12s linear infinite, changeColor 5s infinite;
     font-size: 20px;
+    width: min-content;
+    height: min-content;
     font-weight: bold;
+    overflow: hidden;
     white-space: nowrap;
-  }
+}
 
   /* Keyframes for the scrolling animation */
   @keyframes marque {
@@ -364,6 +365,13 @@ nav ul li a:hover::after {
 
   @media (max-width: 800px) {
 
+    .footer{
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+      text-align: center;
+  }
+  
     header {
       text-align: left;
       padding-left: 1.5rem;
@@ -379,24 +387,7 @@ nav ul li a:hover::after {
       display: none;
     }
 
-    .scrolling-texts-container {
-      /* overflow: hidden; */
-      /* height: max-content; */
-      width: fit-content;
-      /* background-color: #fff;
-      border: 2px solid #ddd; */
-      padding: 10px;
-      backdrop-filter: blur(3px);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
 
-    .scrolling-texts {
-      animation: marque 12s linear infinite, changeColor 5s infinite;
-      font-size: 20px;
-      font-weight: bold;
-      overflow: hidden;
-      white-space: nowrap;
-    }
   }
 
   @media (max-width: 1200px) {
@@ -411,27 +402,10 @@ nav ul li a:hover::after {
       font-size: 30px;
     }
 
-    .nav-list {
-      display: none;
+
     }
 
-    .scrolling-texts-container {
-      /* overflow: hidden; */
-      /* height: max-content; */
-      width: fit-content;
-      /* background-color: #fff;
-      border: 2px solid #ddd; */
-      padding: 10px;
-      backdrop-filter: blur(3px);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
 
-    .scrolling-texts {
-      animation: marque 12s linear infinite, changeColor 5s infinite;
-      font-size: 20px;
-      font-weight: bold;
-      overflow: hidden;
-      white-space: nowrap;
     }
   }
 
@@ -453,24 +427,6 @@ nav ul li a:hover::after {
       padding: 2rem;
     }
 
-    .scrolling-texts-container {
-      /* overflow: hidden; */
-      /* height: max-content; */
-      width: fit-content;
-      /* background-color: #fff;
-      border: 2px solid #ddd; */
-      padding: 10px;
-      backdrop-filter: blur(3px);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .scrolling-texts {
-      animation: marque 12s linear infinite, changeColor 5s infinite;
-      font-size: 20px;
-      font-weight: bold;
-      overflow: hidden;
-      white-space: nowrap;
-    }
 
   }
 
@@ -485,24 +441,6 @@ nav ul li a:hover::after {
       font-size: 4.5rem;
     }
 
-    .scrolling-texts-container {
-      /* overflow: hidden; */
-      /* height: max-content; */
-      width: fit-content;
-      /* background-color: #fff;
-      border: 2px solid #ddd; */
-      padding: 10px;
-      backdrop-filter: blur(3px);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .scrolling-texts {
-      animation: marque 12s linear infinite, changeColor 5s infinite;
-      font-size: 20px;
-      font-weight: bold;
-      overflow: hidden;
-      white-space: nowrap;
-    }
 
   }
 
@@ -520,25 +458,9 @@ nav ul li a:hover::after {
       padding: 0.1rem;
     }
 
-    .scrolling-texts-container {
-      /* overflow: hidden; */
-      /* height: max-content; */
-      width: 45rem;
-      background-color: #ffffff;
-      border: 2px solid #ddd;
-      padding: 8px;
-      backdrop-filter: blur(3px);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
 
-    .scrolling-texts {
-      animation: marque 9s linear infinite, changeColor 5s infinite;
-      font-size: 20px;
-      font-weight: bold;
-      /* overflow: hidden; */
-      /* white-space: nowrap; */
     }
-  }
+  
 
 
 

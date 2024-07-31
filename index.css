@@ -169,6 +169,13 @@ nav ul li a:hover::after {
         display: none;
     }
 
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        text-align: center;
+    }
+
     nav ul li a {
         display: inline;
         color: #ffffff;
@@ -229,9 +236,7 @@ nav ul li a:hover::after {
         font-size: 30px;
     }
 
-    .nav-list {
-        display: none;
-    }
+
 }
 
 /* Nav ending */
@@ -379,6 +384,7 @@ nav ul li a:hover::after {
     }
     
     .footer div {
+
         gap: 2rem;
     }
     

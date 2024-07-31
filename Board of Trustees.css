@@ -93,6 +93,18 @@ nav ul li a:hover::after {
 /* Media Query */
 
 @media (max-width: 600px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        text-align: center;
+    }
 
     /* Adjusted max-width for mobile view */
     .nav-list {
@@ -158,27 +170,23 @@ nav ul li a:hover::after {
         font-size: 30px;
     }
 
-    .nav-list {
-        display: none;
-    }
 }
 
 /* Nav ending */
 
 
 .scrolling-texts-container {
-    position: absolute;
-    height: max-content;
-    width: max-content;
-    z-index: 99;
     padding: 10px;
+    background: transparent;
 }
 
 .scrolling-texts {
     animation: marque 12s linear infinite, changeColor 5s infinite;
     font-size: 20px;
+    width: min-content;
+    height: min-content;
     font-weight: bold;
-    color: #ffffff;
+    overflow: hidden;
     white-space: nowrap;
 }
 

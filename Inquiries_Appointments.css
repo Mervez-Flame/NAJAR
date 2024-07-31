@@ -144,6 +144,12 @@ nav ul li a:hover::after {
     .lead {
         font-size: 30px;
     }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        text-align: center;
+    }
     }
 
 
@@ -159,9 +165,6 @@ nav ul li a:hover::after {
         font-size: 30px;
     }
 
-    .nav-list {
-        display: none;
-    }
 }
 
 /* Nav ending */
