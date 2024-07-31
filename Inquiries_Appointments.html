@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NAJAR - Inquiries and Appointments</title>
+    <title>NAJAR - Inquiries/Appointments</title>
     <link rel="stylesheet" href="Inquiries_Appointments.css" />
 </head>
 
@@ -12,30 +12,89 @@
     <header>
         <nav>
             <p class="lead">NAJAR</p>
+            <button id="nav-toggle" aria-label="Toggle navigation">
+                Menu
+            </button>
             <div class="nav-list">
                 <ul>
-                    <li class="home"><a href="Index.html">Home</a></li>
-                    <li class="about"><a href="About.html">About Us</a></li>
-                    <li class="bot"><a href="Board of Trustees.html">Board of Trustees</a></li>
-                    <li class="gallery"><a href="Gallery.html">Store</a></li> 
-                    <li class="inq"><a href="Inquiries_Appointments.html">Inquiries/Appointments</a></li>
-                    <li class="events"><a href="Upcoming_Events.html">Upcoming Events</a></li>
-                    <li class="contact"><a href="Contact.html">Contact Us</a></li>
+                    <li class="home" data-target="Index.html"><a href="Index.html">Home</a></li>
+                    <li class="about" data-target="About.html"><a href="About.html">About Us</a></li>
+                    <li class="bot" data-target="Board of Trustees.html"><a href="Board of Trustees.html">Board of Trustees</a></li>
+                    <li class="gallery" data-target="Gallery.html"><a href="Gallery.html">Store</a></li>
+                    <li class="inq" data-target="Inquiries_Appointments.html"><a href="Inquiries_Appointments.html">Inquiries/Appointments</a></li>
+                    <li class="events" data-target="Upcoming_Events.html"><a href="Upcoming_Events.html">Upcoming Events</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+    <section>
+        <div class="scrolling-texts-container">
+            <p class="scrolling-texts me">
+                Upcoming Events:
+                - Summer Collection Launch - June 20, 2024
+                - Exclusive Fashion Show - July 15, 2024
+                - Autumn Trends Workshop - August 10, 2024
+                - Winter Gala - December 5, 2024
+                <p/>
+        </div>
+    </section>
+
+    <main>
+        <h1>Inquiries/Appointments</h1>
+        <p>If you have any questions or would like to schedule an appointment, please fill out the form below:</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
 
     
-    <div class="marquee-container">
-        <marquee class="marquee" behavior="scroll" direction="left" scrollamount="5">
-            Upcoming Events:
-            - Summer Collection Launch - June 20, 2024
-            - Exclusive Fashion Show - July 15, 2024
-            - Autumn Trends Workshop - August 10, 2024
-            - Winter Gala - December 5, 2024
-            <marquee />
-    </div>
+
+
+    <footer class="footer">
+        <div class="Socials">
+            <h3>Socials</h3>
+            <p>Facebook</p>
+            <p>Twitter</p>
+            <p>Instagram</p>
+            <p>YouTube</p>
+            <p>Spotify</p>
+            <p>Discord</p>
+            <p>TikTok</p>
+        </div>
+        <div class="Company">
+            <h3>The Company</h3>
+            <p><a href="About.html">About Najar</a></p>
+            <p>Najar Equilibrium</p>
+            <p>Code of Ethics</p>
+            <p>Careers</p>
+            <p>Legal</p>
+            <p>Privacy & Cookie Policy</p>
+            <p>Cookies Settings</p>
+            <p>Corporate Information</p>
+            <p><a href="Board Of Trustees.html">Board of Trustees</a></p>
+        </div>
+        <div>
+            <h3>Legal Terms and Conditions</h3>
+            <p>Legal Notice </p>
+            <p>Privacy Policy </p>
+            <p>Cookie Policy </p>
+            <p>Sitemap </p>
+        </div>
+        <div>
+            <h3>©PRADA 2023 - 2024</h3>
+            <h1>@NAJAR</h1>
+        </div>
+    </footer>
+
+
+
+    <script src="Script.js"></script>
 </body>
 
 </html>

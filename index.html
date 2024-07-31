@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NAJAR</title>
+    <title>NAJAR - Home</title>
     <link rel="stylesheet" href="index.css" />
 </head>
 
@@ -12,15 +12,20 @@
     <header>
         <nav>
             <p class="lead">NAJAR</p>
+            <button id="nav-toggle" aria-label="Toggle navigation">
+                Menu
+            </button>
             <div class="nav-list">
                 <ul>
-                    <li class="home"><a href="Index.html">Home</a></li>
-                    <li class="about"><a href="About.html">About Us</a></li>
-                    <li class="bot"><a href="Board of Trustees.html">Board of Trustees</a></li>
-                    <li class="gallery"><a href="Gallery.html">Store</a></li>
-                    <li class="inq"><a href="Inquiries_Appointments.html">Inquiries/Appointments</a></li>
-                    <li class="events"><a href="Upcoming_Events.html">Upcoming Events</a></li>
-                    <li class="contact"><a href="Contact.html">Contact Us</a></li>
+                    <li class="home" data-target="Index.html"><a href="Index.html">Home</a></li>
+                    <li class="about" data-target="About.html"><a href="About.html">About Us</a></li>
+                    <li class="bot" data-target="Board of Trustees.html"><a href="Board of Trustees.html">Board of
+                            Trustees</a></li>
+                    <li class="gallery" data-target="Gallery.html"><a href="Gallery.html">Store</a></li>
+                    <li class="inq" data-target="Inquiries_Appointments.html"><a
+                            href="Inquiries_Appointments.html">Inquiries/Appointments</a></li>
+                    <li class="events" data-target="Upcoming_Events.html"><a href="Upcoming_Events.html">Upcoming
+                            Events</a></li>
                 </ul>
             </div>
         </nav>
@@ -91,15 +96,23 @@
         <div>
             <h3>Legal Terms and Conditions</h3>
             <p>Legal Notice </p>
-            <p>Privacy Policy   </p>
-            <p>Cookie Policy    </p>
-            <p>Sitemap  </p>
+            <p>Privacy Policy </p>
+            <p>Cookie Policy </p>
+            <p>Sitemap </p>
         </div>
         <div>
             <h3>©PRADA 2023 - 2024</h3>
             <h1>@NAJAR</h1>
         </div>
     </footer>
+
+
+
+
+
+    <script src="Script.js"></script>
+
+
 </body>
 
 </html>
