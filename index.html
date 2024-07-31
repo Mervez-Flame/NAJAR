@@ -19,20 +19,14 @@
                 <ul>
                     <li class="home" data-target="Index.html"><a href="https://najar.vercel.app/">Home</a></li>
                     <li class="about" data-target="About.html"><a href="About.html">About Us</a></li>
-                    <li class="bot" data-target="Board of Trustees.html"><a href="Board of Trustees.html">Board of
-                            Trustees</a></li>
+                    <li class="bot" data-target="Board of Trustees.html"><a href="Board of Trustees.html">Board of Trustees</a></li>
                     <li class="gallery" data-target="Gallery.html"><a href="Gallery.html">Store</a></li>
-                    <li class="inq" data-target="Inquiries_Appointments.html"><a
-                            href="Inquiries_Appointments.html">Inquiries/Appointments</a></li>
-                    <li class="events" data-target="Upcoming_Events.html"><a href="Upcoming_Events.html">Upcoming
-                            Events</a></li>
+                    <li class="inq" data-target="Inquiries_Appointments.html"><a href="Inquiries_Appointments.html">Inquiries/Appointments</a></li>
+                    <li class="events" data-target="Upcoming_Events.html"><a href="Upcoming_Events.html">Upcoming Events</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-
-
-
 
     <section>
         <div class="scrolling-texts-container">
@@ -42,7 +36,7 @@
                 - Exclusive Fashion Show - July 15, 2024
                 - Autumn Trends Workshop - August 10, 2024
                 - Winter Gala - December 5, 2024
-                <p />
+            </p>
         </div>
     </section>
 
@@ -68,7 +62,6 @@
             </div>
         </div>
     </section>
-
 
     <footer class="footer">
         <div class="Socials">
@@ -106,13 +99,41 @@
         </div>
     </footer>
 
-
-
-
+    <!-- Modal -->
+    <div id="popup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p>This is a school project performed by:</p>
+            <ul>
+                <li>Jason Mark-Igbani</li>
+                <li>Adenrenle Adeniji</li>
+                <li>Nathanael Ohiro</li>
+            </ul>
+        </div>
+    </div>
 
     <script src="Script.js"></script>
-
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var modal = document.getElementById('popup-modal');
+            var closeButton = document.querySelector('.close-button');
+        
+            // Show the modal
+            modal.style.display = 'flex';
+        
+            // Close the modal when the close button is clicked
+            closeButton.addEventListener('click', function () {
+                modal.style.display = 'none';
+            });
+        
+            // Close the modal when the user clicks outside of the modal content
+            window.addEventListener('click', function (event) {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
