@@ -143,11 +143,8 @@ nav ul li a:hover::after {
     .lead {
         font-size: 30px;
     }
-
-    .nav-list {
-        display: none;
     }
-}
+
 
 @media (max-width: 1200px) {
 

@@ -19,10 +19,13 @@
                 <ul>
                     <li class="home" data-target="Index.html"><a href="Index.html">Home</a></li>
                     <li class="about" data-target="About.html"><a href="About.html">About Us</a></li>
-                    <li class="bot" data-target="Board of Trustees.html"><a href="Board of Trustees.html">Board of Trustees</a></li>
+                    <li class="bot" data-target="Board of Trustees.html"><a href="Board of Trustees.html">Board of
+                            Trustees</a></li>
                     <li class="gallery" data-target="Gallery.html"><a href="Gallery.html">Store</a></li>
-                    <li class="inq" data-target="Inquiries_Appointments.html"><a href="Inquiries_Appointments.html">Inquiries/Appointments</a></li>
-                    <li class="events" data-target="Upcoming_Events.html"><a href="Upcoming_Events.html">Upcoming Events</a></li>
+                    <li class="inq" data-target="Inquiries_Appointments.html"><a
+                            href="Inquiries_Appointments.html">Inquiries/Appointments</a></li>
+                    <li class="events" data-target="Upcoming_Events.html"><a href="Upcoming_Events.html">Upcoming
+                            Events</a></li>
                 </ul>
             </div>
         </nav>
@@ -35,14 +38,14 @@
                 - Exclusive Fashion Show - July 15, 2024
                 - Autumn Trends Workshop - August 10, 2024
                 - Winter Gala - December 5, 2024
-                <p/>
+                <p />
         </div>
     </section>
 
     <main>
         <h1>Inquiries/Appointments</h1>
         <p>If you have any questions or would like to schedule an appointment, please fill out the form below:</p>
-        <form action="#" method="post">
+        <form id="inquiry-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br>
             <label for="email">Email:</label>
@@ -51,9 +54,10 @@
             <textarea id="message" name="message" rows="4" required></textarea><br>
             <input type="submit" value="Submit">
         </form>
+        <p class="success-message" id="success-message" style="display:none;">Successfully submitted!</p>
     </main>
 
-    
+
 
 
     <footer class="footer">
@@ -95,6 +99,12 @@
 
 
     <script src="Script.js"></script>
+    <script>
+        document.getElementById('inquiry-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+            document.getElementById('success-message').style.display = 'block'; // Show the success message
+        });
+    </script>
 </body>
 
 </html>
